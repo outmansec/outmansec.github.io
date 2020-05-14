@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>outman</title>
+  <title>OutMan</title>
   
-  <subtitle>test</subtitle>
+  <subtitle>这里是小标题</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://outmansec.com/"/>
