@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://outmansec.com/"/>
-  <updated>2020-05-14T13:48:34.578Z</updated>
+  <updated>2020-05-14T14:19:26.501Z</updated>
   <id>https://outmansec.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[漏洞预警] SaltStack 远程命令执行漏洞</title>
+    <link href="https://outmansec.com/2020/05/14/%E6%BC%8F%E6%B4%9E%E9%A2%84%E8%AD%A6-SaltStack-%E8%BF%9C%E7%A8%8B%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E/"/>
+    <id>https://outmansec.com/2020/05/14/%E6%BC%8F%E6%B4%9E%E9%A2%84%E8%AD%A6-SaltStack-%E8%BF%9C%E7%A8%8B%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E/</id>
+    <published>2020-05-14T13:58:33.000Z</published>
+    <updated>2020-05-14T14:19:26.501Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://www.venustech.com.cn/uploads/2020/05/031818147503.png" alt=""></p><h2 id="漏洞背景"><a href="#漏洞背景" class="headerlink" title="漏洞背景"></a>漏洞背景</h2><p>SaltStack Salt是美国SaltStack公司的一套开源的用于管理基础架构的工具，SaltStack 是基于Python开发的一套服务器管理平台，具备服务配置管理、远程执命令、监控状态等功能。其特点是部署轻松，扩展性好，轻松管理上万台服务器，速度快，服务器之间秒级通讯等。</p><h2 id="漏洞详情"><a href="#漏洞详情" class="headerlink" title="漏洞详情"></a>漏洞详情</h2><p><strong>漏洞编号：</strong>CVE-2020-11651 </p><p><strong>漏洞等级：</strong>高</p><p><strong>漏洞名称：</strong>认证绕过漏洞</p><p><strong>漏洞危害：</strong>攻击者仅须发送特制请求包，绕过SaltStack 权限管理即可调用 SaltStack中用于命令下发的相关功能。导致远程命令执行漏洞。</p><p><strong>漏洞编号：</strong>CVE-2020-11652 </p><p><strong>漏洞等级：</strong>高</p><p><strong>漏洞名称：</strong>目录遍历漏洞</p><p><strong>漏洞危害：</strong>攻击者通过构造恶意请求，可以实现读取 SaltStack 服务器上任意文件。导致敏感信息泄漏。</p><h2 id="影响版本"><a href="#影响版本" class="headerlink" title="影响版本"></a>影响版本</h2><ul><li>SaltStack：&lt; 2019.2.4</li><li>SaltStack：&lt; 3000.2</li></ul><h2 id="修复建议"><a href="#修复建议" class="headerlink" title="修复建议"></a>修复建议</h2><p><strong>1、</strong>升级到最新版本，下载地址为：<a href="https://github.com/saltstack/salt/releases" target="_blank" rel="noopener">SaltStack Release</a> ，升级前建议做好备份；</p><p><strong>2、</strong>禁止默认监听端口（4505、4506）向公网开放，并设置为仅对可信对象开放;</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;https://www.venustech.com.cn/uploads/2020/05/031818147503.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;漏洞背景&quot;&gt;&lt;a href=&quot;#漏洞背景&quot; class=&quot;headerlink&quot; tit
+      
+    
+    </summary>
+    
+    
+      <category term="漏洞预警" scheme="https://outmansec.com/categories/%E6%BC%8F%E6%B4%9E%E9%A2%84%E8%AD%A6/"/>
+    
+    
+      <category term="SaltStack" scheme="https://outmansec.com/tags/SaltStack/"/>
+    
+  </entry>
   
   <entry>
     <title>Google Cloud Platform(GCP)开启SSH登陆</title>
