@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://outmansec.com/"/>
-  <updated>2020-05-14T16:22:31.152Z</updated>
+  <updated>2020-05-14T16:50:25.835Z</updated>
   <id>https://outmansec.com/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>[漏洞预警] SaltStack 远程命令执行漏洞</title>
-    <link href="https://outmansec.com/2020/05/14/%E6%BC%8F%E6%B4%9E%E9%A2%84%E8%AD%A6-SaltStack-%E8%BF%9C%E7%A8%8B%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E/"/>
-    <id>https://outmansec.com/2020/05/14/%E6%BC%8F%E6%B4%9E%E9%A2%84%E8%AD%A6-SaltStack-%E8%BF%9C%E7%A8%8B%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E/</id>
+    <link href="https://outmansec.com/vuls/84f1b66e.html"/>
+    <id>https://outmansec.com/vuls/84f1b66e.html</id>
     <published>2020-05-14T13:58:33.000Z</published>
-    <updated>2020-05-14T16:22:31.152Z</updated>
+    <updated>2020-05-14T16:50:25.835Z</updated>
     
     <content type="html"><![CDATA[<p><img src="https://www.venustech.com.cn/uploads/2020/05/031818147503.png" alt=""></p><h2 id="漏洞背景"><a href="#漏洞背景" class="headerlink" title="漏洞背景"></a>漏洞背景</h2><p>SaltStack Salt是美国SaltStack公司的一套开源的用于管理基础架构的工具，SaltStack 是基于Python开发的一套服务器管理平台，具备服务配置管理、远程执命令、监控状态等功能。其特点是部署轻松，扩展性好，轻松管理上万台服务器，速度快，服务器之间秒级通讯等。</p><h2 id="漏洞详情"><a href="#漏洞详情" class="headerlink" title="漏洞详情"></a>漏洞详情</h2><p><strong>漏洞编号：</strong>CVE-2020-11651 </p><p><strong>漏洞等级：</strong>高</p><p><strong>漏洞名称：</strong>认证绕过漏洞</p><p><strong>漏洞危害：</strong>攻击者仅须发送特制请求包，绕过SaltStack 权限管理即可调用 SaltStack中用于命令下发的相关功能。导致远程命令执行漏洞。</p><p><strong>漏洞编号：</strong>CVE-2020-11652 </p><p><strong>漏洞等级：</strong>高</p><p><strong>漏洞名称：</strong>目录遍历漏洞</p><p><strong>漏洞危害：</strong>攻击者通过构造恶意请求，可以实现读取 SaltStack 服务器上任意文件。导致敏感信息泄漏。</p><h2 id="影响版本"><a href="#影响版本" class="headerlink" title="影响版本"></a>影响版本</h2><ul><li>SaltStack：&lt; 2019.2.4</li><li>SaltStack：&lt; 3000.2</li></ul><h2 id="修复建议"><a href="#修复建议" class="headerlink" title="修复建议"></a>修复建议</h2><p><strong>1、</strong>升级到最新版本，下载地址为：<a href="https://github.com/saltstack/salt/releases" target="_blank" rel="noopener">SaltStack Release</a> ，升级前建议做好备份；</p><p><strong>2、</strong>禁止默认监听端口（4505、4506）向公网开放，并设置为仅对可信对象开放;</p>]]></content>
     
@@ -36,7 +36,7 @@
     </summary>
     
     
-      <category term="漏洞预警" scheme="https://outmansec.com/categories/%E6%BC%8F%E6%B4%9E%E9%A2%84%E8%AD%A6/"/>
+      <category term="漏洞预警" scheme="https://outmansec.com/categories/vuls/"/>
     
     
       <category term="SaltStack" scheme="https://outmansec.com/tags/SaltStack/"/>
@@ -45,10 +45,10 @@
   
   <entry>
     <title>Google Cloud Platform(GCP)开启SSH登陆</title>
-    <link href="https://outmansec.com/2020/05/14/Google-Cloud-Platform-GCP-%E5%BC%80%E5%90%AFSSH%E7%99%BB%E9%99%86/"/>
-    <id>https://outmansec.com/2020/05/14/Google-Cloud-Platform-GCP-%E5%BC%80%E5%90%AFSSH%E7%99%BB%E9%99%86/</id>
+    <link href="https://outmansec.com/vps/eb99622.html"/>
+    <id>https://outmansec.com/vps/eb99622.html</id>
     <published>2020-05-14T09:11:09.000Z</published>
-    <updated>2020-05-14T13:48:34.578Z</updated>
+    <updated>2020-05-14T16:50:25.834Z</updated>
     
     <content type="html"><![CDATA[<h3 id="1-切换到-root"><a href="#1-切换到-root" class="headerlink" title="1.切换到 root"></a>1.切换到 root</h3><p>首先打开Google Cloud Platform简称gcp使用自带网页“SSH”工具连接服务器：</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sudo -i</span></span><br></pre></td></tr></table></figure><h3 id="2-编辑ssh配置文件"><a href="#2-编辑ssh配置文件" class="headerlink" title="2.编辑ssh配置文件"></a>2.编辑ssh配置文件</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi <span class="regexp">/etc/</span>ssh<span class="regexp">/sshd_config</span></span><br></pre></td></tr></table></figure><h3 id="3-修改以下内容即可"><a href="#3-修改以下内容即可" class="headerlink" title="3.修改以下内容即可"></a>3.修改以下内容即可</h3><p>这里可以直接用 “Esc “+ “/“ + “Per” 来搜索PermitRootLogin的位置，然后回车之后按i进行插入修改，Password同理，最后Esc–&gt; :wq 退出</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">PermitRootLogin</span> <span class="literal">yes</span></span><br><span class="line"><span class="string">PasswordAuthentication</span> <span class="literal">yes</span></span><br></pre></td></tr></table></figure><h3 id="4-给root用户设置密码"><a href="#4-给root用户设置密码" class="headerlink" title="4.给root用户设置密码"></a>4.给root用户设置密码</h3><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">passwd root</span></span><br></pre></td></tr></table></figure><h3 id="5-重启ssh"><a href="#5-重启ssh" class="headerlink" title="5.重启ssh"></a>5.重启ssh</h3><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">service sshd</span> </span><br><span class="line"><span class="attribute">restart</span></span><br></pre></td></tr></table></figure>]]></content>
     
@@ -62,7 +62,7 @@
     </summary>
     
     
-      <category term="服务器" scheme="https://outmansec.com/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+      <category term="服务器" scheme="https://outmansec.com/categories/vps/"/>
     
     
       <category term="GCP" scheme="https://outmansec.com/tags/GCP/"/>
