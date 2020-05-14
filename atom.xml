@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://outmansec.com/"/>
-  <updated>2020-05-14T07:13:38.578Z</updated>
+  <updated>2020-05-14T09:13:31.069Z</updated>
   <id>https://outmansec.com/</id>
   
   <author>
@@ -17,13 +17,20 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>new test</title>
-    <link href="https://outmansec.com/2020/05/14/new-test/"/>
-    <id>https://outmansec.com/2020/05/14/new-test/</id>
-    <published>2020-05-14T07:13:38.000Z</published>
-    <updated>2020-05-14T07:13:38.578Z</updated>
+    <title>Google Cloud Platform(GCP)开启SSH登陆</title>
+    <link href="https://outmansec.com/2020/05/14/Google-Cloud-Platform-GCP-%E5%BC%80%E5%90%AFSSH%E7%99%BB%E9%99%86/"/>
+    <id>https://outmansec.com/2020/05/14/Google-Cloud-Platform-GCP-%E5%BC%80%E5%90%AFSSH%E7%99%BB%E9%99%86/</id>
+    <published>2020-05-14T09:11:09.000Z</published>
+    <updated>2020-05-14T09:13:31.069Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1-切换到-root"><a href="#1-切换到-root" class="headerlink" title="1.切换到 root"></a>1.切换到 root</h3><p>首先打开Google Cloud Platform简称gcp使用自带网页“SSH”工具连接服务器：</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sudo -i</span></span><br></pre></td></tr></table></figure><h3 id="2-编辑ssh配置文件"><a href="#2-编辑ssh配置文件" class="headerlink" title="2.编辑ssh配置文件"></a>2.编辑ssh配置文件</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi <span class="regexp">/etc/</span>ssh<span class="regexp">/sshd_config</span></span><br></pre></td></tr></table></figure><h3 id="3-修改以下内容即可"><a href="#3-修改以下内容即可" class="headerlink" title="3.修改以下内容即可"></a>3.修改以下内容即可</h3><p>这里可以直接用 “Esc “+ “/“ + “Per” 来搜索PermitRootLogin的位置，然后回车之后按i进行插入修改，Password同理，最后Esc–&gt; :wq 退出</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">PermitRootLogin</span> <span class="literal">yes</span></span><br><span class="line"><span class="string">PasswordAuthentication</span> <span class="literal">yes</span></span><br></pre></td></tr></table></figure><h3 id="4-给root用户设置密码"><a href="#4-给root用户设置密码" class="headerlink" title="4.给root用户设置密码"></a>4.给root用户设置密码</h3><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">passwd root</span></span><br></pre></td></tr></table></figure><h3 id="5-重启ssh"><a href="#5-重启ssh" class="headerlink" title="5.重启ssh"></a>5.重启ssh</h3><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">service sshd restart</span></span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;1-切换到-root&quot;&gt;&lt;a href=&quot;#1-切换到-root&quot; class=&quot;headerlink&quot; title=&quot;1.切换到 root&quot;&gt;&lt;/a&gt;1.切换到 root&lt;/h3&gt;&lt;p&gt;首先打开Google Cloud Platform简称gcp使用自带网页“S
+      
     
     </summary>
     
