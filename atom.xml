@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>OutMan</title>
   
-  <subtitle>一个安全爱好者的博客.</subtitle>
+  <subtitle>一个网络安全爱好者的博客.</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://outmansec.com/"/>
