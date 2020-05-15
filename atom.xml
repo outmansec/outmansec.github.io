@@ -127,4 +127,34 @@
     
   </entry>
   
+  <entry>
+    <title>[漏洞预警] CVE-2020-2551: Weblogic IIOP反序列化漏洞</title>
+    <link href="https://outmansec.com/vuls/CVE-2020-2551.html"/>
+    <id>https://outmansec.com/vuls/CVE-2020-2551.html</id>
+    <published>2020-01-16T13:58:33.000Z</published>
+    <updated>2020-05-15T05:19:34.342Z</updated>
+    
+    <content type="html"><![CDATA[<img src="https://i.loli.net/2020/05/15/YIJCgaMfK8NyuEo.png" style="zoom:80%;" /><h2 id="漏洞背景"><a href="#漏洞背景" class="headerlink" title="漏洞背景"></a>漏洞背景</h2><p>Oracle Fusion Middleware（Oracle融合中间件）是美国甲骨文（Oracle）公司的一套面向企业和云环境的业务创新平台。该平台提供了中间件、软件集合等功能。Oracle WebLogic Server是其中的一个适用于云环境和传统环境的应用服务器组件,2020年1月15日,Oracle发布了一系列的安全补丁,其中Oracle WebLogic Server产品有高危漏洞,漏洞编号CVE-2020-2551,CVSS评分9.8分,漏洞利用难度低,可基于IIOP协议执行远程代码。</p><h2 id="漏洞详情"><a href="#漏洞详情" class="headerlink" title="漏洞详情"></a>漏洞详情</h2><p><strong>漏洞编号：</strong>CVE-2020-2551</p><p><strong>漏洞等级：</strong>高</p><p><strong>漏洞名称：</strong>IIOP反序列化漏洞</p><p><strong>漏洞危害：</strong> 攻击者可利用该漏洞在未经授权下通过构造IIOP协议请求，获取Weblogic服务器权限，执行任意命令。</p><h2 id="影响版本"><a href="#影响版本" class="headerlink" title="影响版本"></a>影响版本</h2><ul><li>Weblogic 12.1.3.0.0</li><li>Weblogic 12.2.1.3.0</li><li>Weblogic  12.2.1.4.0</li><li>Weblogic 10.3.6.0.0</li></ul><h2 id="修复建议"><a href="#修复建议" class="headerlink" title="修复建议"></a>修复建议</h2><p><strong>1、</strong>升级补丁，参考oracle官网发布的补丁<a href="https://www.oracle.com/security-alerts/cpujan2020.html" target="_blank" rel="noopener">https://www.oracle.com/security-alerts/cpujan2020.html</a> 如果不依赖T3协议进行JVM通信，禁用T3协议。</p><p><strong>2、</strong>进入<code>WebLogic</code>控制台，在<code>base_domain</code>配置页面中，进入安全选项卡页面，点击筛选器，配置筛选器。 在连接筛选器中输入：<code>weblogic.security.net.ConnectionFilterImpl</code>，在连接筛选器规则框中输入 <code>7001 deny t3 t3s</code> 保存生效（需重启）</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;img src=&quot;https://i.loli.net/2020/05/15/YIJCgaMfK8NyuEo.png&quot; style=&quot;zoom:80%;&quot; /&gt;
+
+&lt;h2 id=&quot;漏洞背景&quot;&gt;&lt;a href=&quot;#漏洞背景&quot; class=&quot;headerlink&quot; title=&quot;漏
+      
+    
+    </summary>
+    
+    
+      <category term="漏洞预警" scheme="https://outmansec.com/categories/vuls/"/>
+    
+    
+      <category term="WebLogic" scheme="https://outmansec.com/tags/WebLogic/"/>
+    
+      <category term="Oracle" scheme="https://outmansec.com/tags/Oracle/"/>
+    
+  </entry>
+  
 </feed>
