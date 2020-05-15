@@ -74,9 +74,9 @@
     <link href="https://outmansec.com/vuls/tongda.html"/>
     <id>https://outmansec.com/vuls/tongda.html</id>
     <published>2020-04-22T13:58:33.000Z</published>
-    <updated>2020-05-15T02:32:29.124Z</updated>
+    <updated>2020-05-15T02:38:02.420Z</updated>
     
-    <content type="html"><![CDATA[<img src="https://i.loli.net/2020/05/15/EmY6vJfRWTaIQnw.png" style="zoom:80%;" /><h2 id="漏洞背景"><a href="#漏洞背景" class="headerlink" title="漏洞背景"></a>漏洞背景</h2><p>通达OA是一套办公系统。通达OA官方于4月17日发布安全更新。经分析，在该次安全更新中修复了包括任意用户登录在内的高危漏洞。攻击者通过构造恶意请求，可以直接绕过登录验证逻辑，伪装为系统管理员身份登录OA系统。</p><h2 id="漏洞详情"><a href="#漏洞详情" class="headerlink" title="漏洞详情"></a>漏洞详情</h2><p><strong>漏洞编号：</strong>未知 </p><p><strong>漏洞等级：</strong>高</p><p><strong>漏洞名称：</strong>前台任意用户伪造登录漏洞</p><p><strong>漏洞危害：</strong>攻击者通过构造恶意请求，可以直接绕过登录验证逻辑，伪装为系统管理员身份登录OA系统。</p><h2 id="影响版本"><a href="#影响版本" class="headerlink" title="影响版本"></a>影响版本</h2><ul><li>通达OA &lt; 11.5.200417版本</li></ul><h2 id="修复建议"><a href="#修复建议" class="headerlink" title="修复建议"></a>修复建议</h2><p><strong>1、</strong>升级通达 OA 到最新版（当前最新版为11.5.200417），下载地址：<a href="https://www.tongda2000.com/download/sp2019.php；" target="_blank" rel="noopener">https://www.tongda2000.com/download/sp2019.php；</a></p>]]></content>
+    <content type="html"><![CDATA[<img src="https://i.loli.net/2020/05/15/EmY6vJfRWTaIQnw.png" style="zoom:80%;" /><h2 id="漏洞背景"><a href="#漏洞背景" class="headerlink" title="漏洞背景"></a>漏洞背景</h2><p>通达OA是一套办公系统。通达OA官方于4月17日发布安全更新。经分析，在该次安全更新中修复了包括任意用户登录在内的高危漏洞。攻击者通过构造恶意请求，可以直接绕过登录验证逻辑，伪装为系统管理员身份登录OA系统。</p><h2 id="漏洞详情"><a href="#漏洞详情" class="headerlink" title="漏洞详情"></a>漏洞详情</h2><p><strong>漏洞编号：</strong>未知 </p><p><strong>漏洞等级：</strong>高</p><p><strong>漏洞名称：</strong>前台任意用户伪造登录漏洞</p><p><strong>漏洞危害：</strong>攻击者通过构造恶意请求，可以直接绕过登录验证逻辑，伪装为系统管理员身份登录OA系统。</p><h2 id="影响版本"><a href="#影响版本" class="headerlink" title="影响版本"></a>影响版本</h2><ul><li>通达OA &lt; 11.5.200417版本</li></ul><h2 id="修复建议"><a href="#修复建议" class="headerlink" title="修复建议"></a>修复建议</h2><p><strong>1、</strong>升级通达 OA 到最新版(当前最新版为11.5.200417)：<a href="https://www.tongda2000.com/download/sp2019.php" target="_blank" rel="noopener">下载地址</a>；</p>]]></content>
     
     <summary type="html">
     
